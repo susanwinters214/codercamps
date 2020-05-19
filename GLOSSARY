@@ -1,0 +1,36 @@
+
+Class - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+The class keyword in JavaScript was added in ES6. The concept of a class is common across many programming languages, and means something quite different from the class keyword in CSS/HTML. In programming languages, classes are templates for objects. Using a class, you can create the same object over and over again easily. 
+
+Class Inheritance - https://javascript.info/class-inheritance
+Classes in JavaScript can be inherited using the extends keyword. The child class inherits the properties and methods of the parent class. This allows code to be reused for multiple classes. 
+
+Filter - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+The array method filter iterates over every item in an array and returns a new array composed of items that returned true from a filtering condition in a callback method applied to each array item. 
+
+Map - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+A JavaScript array method that iterates over every item within an array and returns a new array that consists of each item with a callback function applied to it.
+
+Method
+A METHOD in Javascript is essentially a function that is stored as an object property.  To perform this function, the method has to be called using the proper javascript syntax: objectName.methodName() 
+Number Methods: https://www.w3schools.com/js/js_number_methods.asp
+String Methods: https://www.w3schools.com/js/js_string_methods.asp
+Array Methods: https://www.w3schools.com/js/js_array_methods.asp
+Object Methods: https://www.w3schools.com/js/js_object_methods.asp
+Get Methods: https://www.w3schools.com/js/js_date_methods.asp
+Set Methods: https://www.w3schools.com/js/js_date_methods_set.asp
+
+Method Chaining
+Method Chaining, refers to repeatedly calling one method after another on an object, in one continuous line of code. The chaining is done by using "dot" notation, in other words, placing a period directly after one method is written and then continuing with the next method and so on.
+
+Object - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
+The only non-primitive data type in JavaScript. An Object can be considered more of a collection of data than a singular data type, consisting of properties and methods, which can be thought of as variables and functions that belong to the object. Objects are central to the paradigm of Object-Oriented Programming, and the concept is not unique to JavaScript.
+
+Reduce - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+The array method reduce iterates over each item in an array while maintaining an accumulator variable that changes at each iteration depending on a given callback function and at the end, returns the accumulator variable. 
+
+This - https://www.w3schools.com/js/js_this.asp
+The JavaScript keyword this refers to the object it is inside. This allows you to accomplish various tasks, such as returning this from a class method definition in order to be able to chain methods.
+
+
+
