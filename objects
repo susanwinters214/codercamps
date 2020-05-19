@@ -1,0 +1,148 @@
+OBJECTS:
+JavaScript has 8 data types. Of these, 7 are classified as 'primitive' data types. 
+Object is the only non-primitive data type in JavaScript, and can be thought of as more of a data structure - a collection of data.
+
+The concept of an Object is not unique to JavaScript. It is common across many programming languages and is central to a programming 
+paradigm known as Object-Oriented Programming (OOP). 
+
+Objects can be created and set as the value of a variable with a variable name. 
+Objects can then have their own internal variables and functions that belong to that object (properties and methods).
+
+Type this:
+const dragon1 = { color: "red", maxHP: 1000 };
+
+This creates a variable with the name dragon that holds an object with two properties: color, and maxHP (hitpoints). 
+The curly braces around the properties signify that we are creating what's called an object literal, similar to how arrays are 
+created with an array literal syntax using square brackets.
+It's common to write object declarations with each property on a separate line, like this:
+
+const dragon1 = { 
+    color: 'red',
+    maxHP: 1000
+};
+
+On each line is a property name (without quotes), followed by a colon, then the property itself, followed by a comma (except the last).
+You can press enter when your code looks like the above. If you pressed enter early by mistake, do not worry about it, you can continue on.
+Now you can type dragon1 into the console and see the object that was created.
+
+You can query each property using dot notation:
+dragon1.color
+dragon1.maxHP
+
+Another way to query properties is by using bracket notation. Here's an example of bracket notation you can try in your console:
+dragon1['color']
+
+If you were to just type in the property name without the object name, it would not work. 
+
+Try it:
+maxHP
+This shows you that the property is attached to the object, unlike a variable, which you can access without giving an object name first.
+
+
+Arrays vs. Objects
+Arrays are a special type of Object, but less flexible.
+Arrays have items, as objects have properties, but array items are always accessed by a numeric index whereas objects are accessed by 
+property names that are set by the programmer.
+You can also add custom methods to objects, whereas you cannot create custom methods for arrays.
+When declaring an object, you can add a method. 
+
+Type the below into your console:
+const dragon2 = {
+    color: "blue",
+    maxHP: 1000,
+    roar() {
+        console.log("The dragon roars ferociously.");
+    }
+};
+
+As you can see, the method was added by using the method name followed by a parameter list inside parentheses (empty in this case), 
+followed by curly braces, and the method body inside the curly braces.
+
+Then you can call the method like this:
+dragon2.roar();
+
+The way of creating a method you have just seen is a shortcut syntax added in ES6. 
+Previously, in ES5 and before, you would have had to write it like this:
+const dragon3 = {
+    color: "black",
+    maxHP: 1000,
+    roar: function() {
+	console.log("The dragon roars ferociously.");
+    }
+};
+
+The two ways are equivalent. While you should use the shorthand syntax that was shown with dragon2, you should be aware of the older 
+syntax because you will still encounter it in older codebases. Also, if you need to add or update a method after the object has already 
+been declared, you will need to use the older syntax.
+
+------------------------------------------------------------------------------------------
+
+Add and update properties and methods to an object
+
+Enter this into your console to add an element property to the dragon1 object:
+dragon1.element = "fire";
+
+Note that the equals sign, a.k.a. the assignment operator, is used here and not a colon. A colon is used when creating the object, 
+inside curly braces. Otherwise, when updating the value of a property, use the assignment operator. 
+
+Update the color property now in the console as well:
+dragon1.color = "crimson";
+
+Then in your console, look at the dragon1 object to confirm that the color has changed:
+dragon1
+
+Let's now add a new method to the dragon1 object. To add a new method, or to update an already existing method, use the function 
+expression syntax as follows:
+dragon1.attack = function() { console.log("The dragon breathes a stream of white-hot flame at you!"); };
+
+Test this out in your console:
+dragon1.attack();
+
+You can also type the object name into the console to see the method inside it:
+dragon1
+
+To update an existing method, you can overwrite it. 
+Enter this into your console:
+dragon2.roar = function() { console.log("The dragon lets out a tremendous roar!"); };
+
+Object properties and methods can be changed.
+However, you can never re-assign the entire value of a constant object. 
+
+Example -- type this into your console:
+dragon1 = { color: "blue" };
+As you can see, you cannot reassign the entire object variable. However, it is fine to update the properties and values.
+
+This is true of arrays as well, because arrays are a special type of object. Type this into your console for a demonstration:
+const colors = ["red", "blue", "black"];
+
+You canNOT reassign the whole array. Try this:
+colors = ["crimson", "turquoise", "onyx"];
+
+But you CAN change items in the array, like this:
+colors[0] = "crimson";
+colors[1] = "turquoise";
+colors[2] = "onyx";
+colors
+
+----------------------------------------------------------------------------------------------------------
+Using parameters in methods
+
+You can use parameters in methods just as you can in functions.
+
+In your console, add an element property:
+dragon2.element = "water";
+
+Then add a method to this object with a dir parameter, as follows:
+dragon2.swim = function(dir) {
+    console.log(`The dragon swims away to the ${dir}.`);
+};
+
+Test out this new method:
+dragon2.swim("north");
+
+Summary
+
+You've learned about the Object data type, the meaning of properties and methods, how to create and add/update objects with properties
+and methods, how to reference and call those properties and methods, and how the const keyword works with objects and arrays. 
+
+References: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
