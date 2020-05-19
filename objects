@@ -146,3 +146,5 @@ You've learned about the Object data type, the meaning of properties and methods
 and methods, how to reference and call those properties and methods, and how the const keyword works with objects and arrays. 
 
 References: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
+
+Code Challenge: https://codepen.io/susanwinters/pen/pojQOBQ
