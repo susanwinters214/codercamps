@@ -1,0 +1,26 @@
+Template literals provide a way to combine variables with strings. 
+
+Example:
+
+const foxSpeed = "quick";
+const foxColor = "brown";
+const foxAction = "jumps";
+const dogType = "lazy";
+
+If you were to use these variables within a string using the concatenation operator (+) as you have done before, it would look like this:
+
+"The " + foxSpeed + " " + foxColor + " fox " + foxAction + " over the " + dogType + " dog."
+
+With template literal syntax, you can write the same thing like this, using backticks around the entire string 
+and ${ ... }s around the variables being interpolated:
+
+`The ${foxSpeed} ${foxColor} fox ${foxAction} over the ${dogType} dog.`;
+
+The template literal syntax is often easier to read (and type). 
+
+Notice that instead of single or double quotes, the string inside which you are using template literals is surrounded by pairs of 
+backticks (`). The backticks allow you to insert variables inside the string (a.k.a. string interpolation) with the ${ ... } syntax. 
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+==================================================================================================
+Challenge: https://codepen.io/susanwinters/pen/JjYeaNq
