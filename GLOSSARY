@@ -5,8 +5,29 @@ The class keyword in JavaScript was added in ES6. The concept of a class is comm
 Class Inheritance - https://javascript.info/class-inheritance
 Classes in JavaScript can be inherited using the extends keyword. The child class inherits the properties and methods of the parent class. This allows code to be reused for multiple classes. 
 
+Components
+React Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. They can be created using either functions or classes, and have slightly different rules depending on which you use. Whether a functional component or a class component, they will always return a single object, typically either a JSX element or another component. 
+
+The name of a component must always be capitalized. To render a component, use JSX/HTML tags (angle brackets) around the component name, like so: <App />. Depending on the component, they can be self-closing or have both a start and end tag. 
+
+Components can have state data, which is stored locally within the component itself, or it can have prop data, which is stored in a parent component and passed down. State data can be changed. Props are read-only.
+
+
+Element (JSX)
+An element in JSX is a single JavaScript object that represents a single HTML element. It is written like an HTML element, e.g. <div>. They are written in lower case, unlike React components, which capitalize the first letter. Elements are not components; instead, elements are what components are composed of. 
+
+Export
+JavaScript keyword to export variables/functions/classes from a file (module). There can be named and default exports. 
+
 Filter - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 The array method filter iterates over every item in an array and returns a new array composed of items that returned true from a filtering condition in a callback method applied to each array item. 
+
+
+Import
+JavaScript keyword to import variables/functions from a different file (module). 
+
+JSX
+JSX stands for JavaScript eXtension language, or JavaScript XML. It's a way to represent JavaScript objects using an HTML/XML-like syntax, but JSX elements transpile to JavaScript objects created using React.createElement. JSX is used in the return statement for React components.
 
 Map - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 A JavaScript array method that iterates over every item within an array and returns a new array that consists of each item with a callback function applied to it.
@@ -23,11 +44,20 @@ Set Methods: https://www.w3schools.com/js/js_date_methods_set.asp
 Method Chaining
 Method Chaining, refers to repeatedly calling one method after another on an object, in one continuous line of code. The chaining is done by using "dot" notation, in other words, placing a period directly after one method is written and then continuing with the next method and so on.
 
+Module
+A JavaScript file from which there is at least one export.
+
 Object - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics
 The only non-primitive data type in JavaScript. An Object can be considered more of a collection of data than a singular data type, consisting of properties and methods, which can be thought of as variables and functions that belong to the object. Objects are central to the paradigm of Object-Oriented Programming, and the concept is not unique to JavaScript.
 
+Props
+Props (short for "properties") are an objects in React used by components to receive data from parent components. A parent component can pass data to a child component, and the child component can then access that data through the props object.
+
 Reduce - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 The array method reduce iterates over each item in an array while maintaining an accumulator variable that changes at each iteration depending on a given callback function and at the end, returns the accumulator variable. 
+
+State
+Class components in React can define a this.state object in their constructor method, which can then hold data for the component to use or pass down to child components as props. State should never be assigned except in the constructor; anywhere else in the component, if state needs to be changed, use the this.setState method provided by React.
 
 This - https://www.w3schools.com/js/js_this.asp
 The JavaScript keyword this refers to the object it is inside. This allows you to accomplish various tasks, such as returning this from a class method definition in order to be able to chain methods.
